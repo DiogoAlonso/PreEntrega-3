@@ -71,12 +71,10 @@ main section {
   display: flex;
   flex-flow: row;
 }
-
 footer {
   background-color: rgb(0, 0, 130);
   height: 30vh;
   width: 100%;
-  position: absolute;
 }
 section {
   display: flex;
@@ -141,7 +139,6 @@ footer ul li {
   text-align: left;
 }
 body {
-  height: 100vh;
   width: 100vw;
   position: relative;
   background-color: rgb(235, 255, 207);
@@ -272,6 +269,7 @@ body {
 }
 .footer {
   width: 100%;
+  background-position-y: bottom;
 }
 .catalogo {
   width: 100%;
