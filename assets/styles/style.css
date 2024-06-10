@@ -30,8 +30,11 @@ ul li a {
 }
 
 .contacto {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
+}
+.contacto div h1 {
+  color: white;
 }
 
 .nosotros {
@@ -130,6 +133,7 @@ footer ul li {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: white;
+  border-radius: 10px;
 }
 .input-group {
   display: flex;
@@ -345,4 +349,11 @@ li.nav-item {
 div h1 {
   background-color: rgb(0, 0, 130);
   margin-top: 3px;
+}
+.somos-description h2 {
+  margin-bottom: 10vh;
+  margin-top: 3vh;
+}
+.row-g-3 {
+  width: 80vw;
 }
