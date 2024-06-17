@@ -2,6 +2,7 @@ nav {
   background-color: rgb(235, 255, 207);
   width: 100vw;
 }
+
 ul {
   list-style: none;
   border-left: black;
@@ -13,6 +14,7 @@ nav ul li {
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
+
 ul li a {
   margin: 5px;
   text-decoration: none;
@@ -30,8 +32,12 @@ ul li a {
 }
 
 .contacto {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
+}
+
+.contacto div h1 {
+  color: white;
 }
 
 .nosotros {
@@ -44,23 +50,29 @@ ul li a {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .casual {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.205);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .futbol {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.205);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .logo {
   height: 300px;
 }
+
 header {
   background-color: rgb(0, 0, 130);
   width: 100vw;
+  text-align: center;
 }
+
 main section {
   background-color: white;
   margin: 20px;
@@ -72,9 +84,9 @@ main section {
 footer {
   background-color: rgb(0, 0, 130);
   height: 30vh;
-  bottom: 0;
   width: 100%;
 }
+
 section {
   display: flex;
   flex-flow: row;
@@ -83,45 +95,56 @@ section {
   text-align: center;
   margin: auto;
 }
+
 .somos {
-  background-color: rgb(2, 98, 110);
+  background-color: rgb(235, 255, 207);
   text-align: center;
 }
+
 main {
   margin: auto;
   background-color: rgb(235, 255, 207);
 }
+
 section p {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 main ul {
   display: inline-block;
 }
+
 main ul li img {
   height: 50vh;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
 main ul h2 {
   background-color: rgb(0, 0, 130);
   color: white;
 }
+
 main ul li {
   margin: 1vh;
 }
+
 footer ul li a img {
   height: 7vh;
   text-align: center;
   margin-top: 15%;
 }
+
 footer ul li {
   display: inline-block;
 }
+
 #contacto {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #formulario {
   padding: 50px 50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -130,32 +153,29 @@ footer ul li {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: white;
+  border-radius: 10px;
 }
+
 .input-group {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
+
 body {
-  height: 100vh;
   width: 100vw;
   position: relative;
   background-color: rgb(235, 255, 207);
 }
+
 @media screen and (max-width: 480px) {
   .calzado {
-    grid-template-columns: repeat (6, 1rf);
+    grid-template-columns: repeat 6, 1rf;
     grid-template-rows: 5vh 5vh 25vh 25vh 25vh 15vh;
-    grid-template-areas:
-      ". . header header . ."
-      ". . nav-calzado nav-calzado . ."
-      "uno uno dos dos tres tres"
-      "cuatro cinco seis"
-      "c1 c2 c3"
-      "c4 c5";
-      width: 100vw;
-      margin: 0px;
-      padding: 0%;
+    grid-template-areas: ". . header header . ." ". . nav-calzado nav-calzado . ." "uno uno dos dos tres tres" "cuatro cinco seis" "c1 c2 c3" "c4 c5";
+    width: 100vw;
+    margin: 0px;
+    padding: 0%;
   }
   .header {
     grid-area: header;
@@ -235,51 +255,48 @@ body {
     display: flex;
     width: 30vw;
     height: auto;
-}
-.f1 {
-  grid-area: f1;
-  display: flex;
-  width: 30vw;
-  height: auto;
-}
-.f2 {
-  grid-area: f2;
-  display: flex;
-  width: 30vw;
-  height: auto;
-}
-.f3 {
-  grid-area: f3;
-  display: flex;
-  width: 30vw;
-  height: auto;
-}
-.f4 {
-  grid-area: f4;
-  display: flex;
-  width: 30vw;
-  height: auto;
-}
-.f5 {
-  grid-area: f5;
-  display: flex;
-  width: 30vw;
-  height: auto;
-}
-.footer {
-  width: 100%;
-}
-.catalogo {
-  width: 100%;
-}
-.accesorios {
-  grid-template-columns: repeat (6, 1rf);
-  grid-template-rows: 5vh 5vh 25vh 25vh 25vh 15vh;
-  grid-template-areas:
-    ". . header header . ."
-    ". . nav-accesorios nav-accesorios . ."
-    "g1 g2 g3"
-    "g4 g5";
+  }
+  .f1 {
+    grid-area: f1;
+    display: flex;
+    width: 30vw;
+    height: auto;
+  }
+  .f2 {
+    grid-area: f2;
+    display: flex;
+    width: 30vw;
+    height: auto;
+  }
+  .f3 {
+    grid-area: f3;
+    display: flex;
+    width: 30vw;
+    height: auto;
+  }
+  .f4 {
+    grid-area: f4;
+    display: flex;
+    width: 30vw;
+    height: auto;
+  }
+  .f5 {
+    grid-area: f5;
+    display: flex;
+    width: 30vw;
+    height: auto;
+  }
+  .footer {
+    width: 100%;
+    background-position-y: bottom;
+  }
+  .catalogo {
+    width: 100%;
+  }
+  .accesorios {
+    grid-template-columns: repeat 6, 1rf;
+    grid-template-rows: 5vh 5vh 25vh 25vh 25vh 15vh;
+    grid-template-areas: ". . header header . ." ". . nav-accesorios nav-accesorios . ." "g1 g2 g3" "g4 g5";
     width: 100vw;
     margin: 0px;
     padding: 0%;
@@ -326,16 +343,48 @@ nav h2 {
   color: white;
   text-align: center;
 }
-.titulo-gorra { 
+
+.titulo-gorra {
   background-color: rgb(0, 0, 130);
 }
+
 a:hover {
   background-color: rgb(0, 0, 130);
   color: white;
 }
+
 #navbarNav {
   justify-content: center;
 }
+
 li.nav-item {
   margin: 5px;
 }
+
+.mision {
+  height: 40%;
+}
+
+div h1 {
+  background-color: rgb(0, 0, 130);
+  margin-top: 3px;
+}
+
+.somos-description h2 {
+  margin-bottom: 10vh;
+  margin-top: 3vh;
+}
+
+.row-g-3 {
+  width: 80vw;
+}
+
+body {
+  color: rgb(235, 255, 207);
+}
+
+.somos-description {
+  background-color: rgba(11, 0, 112, 0.314);
+}
+
+/*# sourceMappingURL=styles.css.map */
