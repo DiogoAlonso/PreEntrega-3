@@ -155,9 +155,14 @@ nav {
         "cuatro cinco seis"
         "c1 c2 c3"
         "c4 c5";
-        width: 100vw;
+        width: 100%;
         margin: 0px;
         padding: 0%;
+        main ul {
+          display: inline-grid;
+        }main ul li img {
+          width: 18rem;
+        }
     }
     .header {
       grid-area: header;

@@ -70,7 +70,6 @@ ul li a {
 header {
   background-color: rgb(0, 0, 130);
   width: 100vw;
-  text-align: center;
 }
 
 main section {
@@ -173,9 +172,15 @@ body {
     grid-template-columns: repeat 6, 1rf;
     grid-template-rows: 5vh 5vh 25vh 25vh 25vh 15vh;
     grid-template-areas: ". . header header . ." ". . nav-calzado nav-calzado . ." "uno uno dos dos tres tres" "cuatro cinco seis" "c1 c2 c3" "c4 c5";
-    width: 100vw;
+    width: 100%;
     margin: 0px;
     padding: 0%;
+  }
+  .calzado main ul {
+    display: inline-grid;
+  }
+  .calzado main ul li img {
+    width: 18rem;
   }
   .header {
     grid-area: header;
